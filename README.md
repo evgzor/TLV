@@ -1,6 +1,6 @@
 # README #
 
-To get to know the candidate better and give some food for thought for our next interview.
+To get to know about the candidate better and give some food for thought for our next interview.
 
 ### Chalenge task for payworks ###
 
