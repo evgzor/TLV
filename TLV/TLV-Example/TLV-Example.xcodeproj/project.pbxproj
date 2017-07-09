@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F03DAB061F11099000E09D89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F03DAB051F11099000E09D89 /* main.m */; };
+		F03DAB091F11099000E09D89 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F03DAB081F11099000E09D89 /* AppDelegate.m */; };
+		F03DAB0C1F11099000E09D89 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F03DAB0B1F11099000E09D89 /* ViewController.m */; };
+		F03DAB0F1F11099000E09D89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F03DAB0D1F11099000E09D89 /* Main.storyboard */; };
+		F03DAB111F11099000E09D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F03DAB101F11099000E09D89 /* Assets.xcassets */; };
+		F03DAB141F11099000E09D89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F03DAB121F11099000E09D89 /* LaunchScreen.storyboard */; };
+		F03DAB1F1F11099000E09D89 /* TLV_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F03DAB1E1F11099000E09D89 /* TLV_ExampleTests.m */; };
+		F03DAB2A1F11099000E09D89 /* TLV_ExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F03DAB291F11099000E09D89 /* TLV_ExampleUITests.m */; };
+		F03DAB981F12414700E09D89 /* TLVParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F03DAB971F12414700E09D89 /* TLVParser.framework */; };
+		F03DAB991F12414700E09D89 /* TLVParser.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F03DAB971F12414700E09D89 /* TLVParser.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F03DAB1B1F11099000E09D89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F03DAAF91F11099000E09D89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F03DAB001F11099000E09D89;
+			remoteInfo = "TLV-Example";
+		};
+		F03DAB261F11099000E09D89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F03DAAF91F11099000E09D89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F03DAB001F11099000E09D89;
+			remoteInfo = "TLV-Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F03DAB9A1F12414700E09D89 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F03DAB991F12414700E09D89 /* TLVParser.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F03DAB011F11099000E09D89 /* TLV-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TLV-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F03DAB051F11099000E09D89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F03DAB071F11099000E09D89 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F03DAB081F11099000E09D89 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F03DAB0A1F11099000E09D89 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F03DAB0B1F11099000E09D89 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F03DAB0E1F11099000E09D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F03DAB101F11099000E09D89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F03DAB131F11099000E09D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F03DAB151F11099000E09D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F03DAB1A1F11099000E09D89 /* TLV-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TLV-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F03DAB1E1F11099000E09D89 /* TLV_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLV_ExampleTests.m; sourceTree = "<group>"; };
+		F03DAB201F11099000E09D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F03DAB251F11099000E09D89 /* TLV-ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TLV-ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F03DAB291F11099000E09D89 /* TLV_ExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLV_ExampleUITests.m; sourceTree = "<group>"; };
+		F03DAB2B1F11099000E09D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F03DAB921F12407000E09D89 /* TLVParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TLVParser.framework; path = "../TLVParser/build/Debug-iphoneos/TLVParser.framework"; sourceTree = "<group>"; };
+		F03DAB971F12414700E09D89 /* TLVParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TLVParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F03DAAFE1F11099000E09D89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F03DAB981F12414700E09D89 /* TLVParser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F03DAB171F11099000E09D89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F03DAB221F11099000E09D89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F03DAAF81F11099000E09D89 = {
+			isa = PBXGroup;
+			children = (
+				F03DAB031F11099000E09D89 /* TLV-Example */,
+				F03DAB1D1F11099000E09D89 /* TLV-ExampleTests */,
+				F03DAB281F11099000E09D89 /* TLV-ExampleUITests */,
+				F03DAB021F11099000E09D89 /* Products */,
+				F03DAB881F110BE100E09D89 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F03DAB021F11099000E09D89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F03DAB011F11099000E09D89 /* TLV-Example.app */,
+				F03DAB1A1F11099000E09D89 /* TLV-ExampleTests.xctest */,
+				F03DAB251F11099000E09D89 /* TLV-ExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F03DAB031F11099000E09D89 /* TLV-Example */ = {
+			isa = PBXGroup;
+			children = (
+				F03DAB071F11099000E09D89 /* AppDelegate.h */,
+				F03DAB081F11099000E09D89 /* AppDelegate.m */,
+				F03DAB0A1F11099000E09D89 /* ViewController.h */,
+				F03DAB0B1F11099000E09D89 /* ViewController.m */,
+				F03DAB0D1F11099000E09D89 /* Main.storyboard */,
+				F03DAB101F11099000E09D89 /* Assets.xcassets */,
+				F03DAB121F11099000E09D89 /* LaunchScreen.storyboard */,
+				F03DAB151F11099000E09D89 /* Info.plist */,
+				F03DAB041F11099000E09D89 /* Supporting Files */,
+			);
+			path = "TLV-Example";
+			sourceTree = "<group>";
+		};
+		F03DAB041F11099000E09D89 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F03DAB051F11099000E09D89 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F03DAB1D1F11099000E09D89 /* TLV-ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				F03DAB1E1F11099000E09D89 /* TLV_ExampleTests.m */,
+				F03DAB201F11099000E09D89 /* Info.plist */,
+			);
+			path = "TLV-ExampleTests";
+			sourceTree = "<group>";
+		};
+		F03DAB281F11099000E09D89 /* TLV-ExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F03DAB291F11099000E09D89 /* TLV_ExampleUITests.m */,
+				F03DAB2B1F11099000E09D89 /* Info.plist */,
+			);
+			path = "TLV-ExampleUITests";
+			sourceTree = "<group>";
+		};
+		F03DAB881F110BE100E09D89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F03DAB971F12414700E09D89 /* TLVParser.framework */,
+				F03DAB921F12407000E09D89 /* TLVParser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F03DAB001F11099000E09D89 /* TLV-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F03DAB2E1F11099100E09D89 /* Build configuration list for PBXNativeTarget "TLV-Example" */;
+			buildPhases = (
+				F03DAAFD1F11099000E09D89 /* Sources */,
+				F03DAAFE1F11099000E09D89 /* Frameworks */,
+				F03DAAFF1F11099000E09D89 /* Resources */,
+				F03DAB9A1F12414700E09D89 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TLV-Example";
+			productName = "TLV-Example";
+			productReference = F03DAB011F11099000E09D89 /* TLV-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F03DAB191F11099000E09D89 /* TLV-ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F03DAB311F11099100E09D89 /* Build configuration list for PBXNativeTarget "TLV-ExampleTests" */;
+			buildPhases = (
+				F03DAB161F11099000E09D89 /* Sources */,
+				F03DAB171F11099000E09D89 /* Frameworks */,
+				F03DAB181F11099000E09D89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F03DAB1C1F11099000E09D89 /* PBXTargetDependency */,
+			);
+			name = "TLV-ExampleTests";
+			productName = "TLV-ExampleTests";
+			productReference = F03DAB1A1F11099000E09D89 /* TLV-ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F03DAB241F11099000E09D89 /* TLV-ExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F03DAB341F11099100E09D89 /* Build configuration list for PBXNativeTarget "TLV-ExampleUITests" */;
+			buildPhases = (
+				F03DAB211F11099000E09D89 /* Sources */,
+				F03DAB221F11099000E09D89 /* Frameworks */,
+				F03DAB231F11099000E09D89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F03DAB271F11099000E09D89 /* PBXTargetDependency */,
+			);
+			name = "TLV-ExampleUITests";
+			productName = "TLV-ExampleUITests";
+			productReference = F03DAB251F11099000E09D89 /* TLV-ExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F03DAAF91F11099000E09D89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Eugene Zorin";
+				TargetAttributes = {
+					F03DAB001F11099000E09D89 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					F03DAB191F11099000E09D89 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F03DAB001F11099000E09D89;
+					};
+					F03DAB241F11099000E09D89 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F03DAB001F11099000E09D89;
+					};
+				};
+			};
+			buildConfigurationList = F03DAAFC1F11099000E09D89 /* Build configuration list for PBXProject "TLV-Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F03DAAF81F11099000E09D89;
+			productRefGroup = F03DAB021F11099000E09D89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F03DAB001F11099000E09D89 /* TLV-Example */,
+				F03DAB191F11099000E09D89 /* TLV-ExampleTests */,
+				F03DAB241F11099000E09D89 /* TLV-ExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F03DAAFF1F11099000E09D89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F03DAB141F11099000E09D89 /* LaunchScreen.storyboard in Resources */,
+				F03DAB111F11099000E09D89 /* Assets.xcassets in Resources */,
+				F03DAB0F1F11099000E09D89 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F03DAB181F11099000E09D89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F03DAB231F11099000E09D89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F03DAAFD1F11099000E09D89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F03DAB0C1F11099000E09D89 /* ViewController.m in Sources */,
+				F03DAB091F11099000E09D89 /* AppDelegate.m in Sources */,
+				F03DAB061F11099000E09D89 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F03DAB161F11099000E09D89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F03DAB1F1F11099000E09D89 /* TLV_ExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F03DAB211F11099000E09D89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F03DAB2A1F11099000E09D89 /* TLV_ExampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F03DAB1C1F11099000E09D89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F03DAB001F11099000E09D89 /* TLV-Example */;
+			targetProxy = F03DAB1B1F11099000E09D89 /* PBXContainerItemProxy */;
+		};
+		F03DAB271F11099000E09D89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F03DAB001F11099000E09D89 /* TLV-Example */;
+			targetProxy = F03DAB261F11099000E09D89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F03DAB0D1F11099000E09D89 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F03DAB0E1F11099000E09D89 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F03DAB121F11099000E09D89 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F03DAB131F11099000E09D89 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F03DAB2C1F11099100E09D89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F03DAB2D1F11099100E09D89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F03DAB2F1F11099100E09D89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "TLV-Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Zorin.TLV-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F03DAB301F11099100E09D89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "TLV-Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Zorin.TLV-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F03DAB321F11099100E09D89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "TLV-ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Zorin.TLV-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TLV-Example.app/TLV-Example";
+			};
+			name = Debug;
+		};
+		F03DAB331F11099100E09D89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "TLV-ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Zorin.TLV-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TLV-Example.app/TLV-Example";
+			};
+			name = Release;
+		};
+		F03DAB351F11099100E09D89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "TLV-ExampleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Zorin.TLV-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "TLV-Example";
+			};
+			name = Debug;
+		};
+		F03DAB361F11099100E09D89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "TLV-ExampleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Zorin.TLV-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "TLV-Example";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F03DAAFC1F11099000E09D89 /* Build configuration list for PBXProject "TLV-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F03DAB2C1F11099100E09D89 /* Debug */,
+				F03DAB2D1F11099100E09D89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F03DAB2E1F11099100E09D89 /* Build configuration list for PBXNativeTarget "TLV-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F03DAB2F1F11099100E09D89 /* Debug */,
+				F03DAB301F11099100E09D89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F03DAB311F11099100E09D89 /* Build configuration list for PBXNativeTarget "TLV-ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F03DAB321F11099100E09D89 /* Debug */,
+				F03DAB331F11099100E09D89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F03DAB341F11099100E09D89 /* Build configuration list for PBXNativeTarget "TLV-ExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F03DAB351F11099100E09D89 /* Debug */,
+				F03DAB361F11099100E09D89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F03DAAF91F11099000E09D89 /* Project object */;
+}
