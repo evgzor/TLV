@@ -21,7 +21,7 @@ To get to know about the candidate better and give some food for thought for our
 
 * For framework unit tests used to only one Ber Tlv structure as example one
 * Code documented by Xcode code generator
-* Need test on more Tvl structures.
+* Need to test more different Tvl structures.
 
 ### Extra info ###
 
