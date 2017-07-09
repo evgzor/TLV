@@ -22,12 +22,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Oix-0j-BiA">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Oix-0j-BiA">
                                 <rect key="frame" x="16" y="28" width="288" height="200"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlx-xF-fBk">
                                 <rect key="frame" x="127.5" y="240" width="65" height="34"/>
@@ -43,7 +43,7 @@
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LpB-24-ScJ">
                                 <rect key="frame" x="16" y="275" width="288" height="200"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -90,6 +90,10 @@
                                 <exclude reference="lJp-uu-FDH"/>
                                 <exclude reference="rvc-34-usi"/>
                                 <exclude reference="vvt-i9-kN2"/>
+                                <exclude reference="INy-Fg-07f"/>
+                                <exclude reference="g85-RF-FAc"/>
+                                <exclude reference="gUy-VV-kIk"/>
+                                <exclude reference="jkj-rw-ffS"/>
                                 <exclude reference="AmO-Kg-eG9"/>
                                 <exclude reference="KVl-dS-7Eu"/>
                                 <exclude reference="OcB-1l-Zgo"/>
@@ -101,10 +105,6 @@
                                 <exclude reference="fR8-Se-W8v"/>
                                 <exclude reference="rN0-2b-nPa"/>
                                 <exclude reference="x6t-kO-2BR"/>
-                                <exclude reference="INy-Fg-07f"/>
-                                <exclude reference="g85-RF-FAc"/>
-                                <exclude reference="gUy-VV-kIk"/>
-                                <exclude reference="jkj-rw-ffS"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
@@ -112,10 +112,10 @@
                                 <include reference="0Lr-CE-aLH"/>
                                 <include reference="UaI-Bn-dvV"/>
                                 <include reference="vvt-i9-kN2"/>
+                                <include reference="jkj-rw-ffS"/>
                                 <include reference="eE5-hS-zcN"/>
                                 <include reference="lo1-2m-9Wd"/>
                                 <include reference="rN0-2b-nPa"/>
-                                <include reference="jkj-rw-ffS"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
@@ -123,12 +123,12 @@
                                 <include reference="1ZF-gi-TqK"/>
                                 <include reference="l0Q-bo-ppk"/>
                                 <include reference="rvc-34-usi"/>
+                                <include reference="g85-RF-FAc"/>
                                 <include reference="KVl-dS-7Eu"/>
                                 <include reference="OcB-1l-Zgo"/>
                                 <include reference="bt6-8M-8p2"/>
                                 <include reference="fR8-Se-W8v"/>
                                 <include reference="x6t-kO-2BR"/>
-                                <include reference="g85-RF-FAc"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -136,11 +136,11 @@
                                 <include reference="5sX-UU-iCY"/>
                                 <include reference="dJH-9V-53a"/>
                                 <include reference="lJp-uu-FDH"/>
+                                <include reference="INy-Fg-07f"/>
+                                <include reference="gUy-VV-kIk"/>
                                 <include reference="AmO-Kg-eG9"/>
                                 <include reference="OgF-un-ZVH"/>
                                 <include reference="aaA-NA-9wR"/>
-                                <include reference="INy-Fg-07f"/>
-                                <include reference="gUy-VV-kIk"/>
                             </mask>
                         </variation>
                     </view>

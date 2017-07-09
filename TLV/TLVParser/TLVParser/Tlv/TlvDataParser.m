@@ -100,14 +100,14 @@ static const uint undefinedLenghtValueIndicator = 0x80;
 }
 
 - (void) addArray:(NSData*) data offset:(uint) offset
-       tagBytesLenght:(uint)tagBytesCount
-       dataBytesLenght:(uint) dataBytesCount
+       tagBytesLenght:(uint)tagBytesLenght
+       dataBytesLenght:(uint) dataBytesLenght
       valueLenght:(int) valueLenght
       andArray:(NSMutableArray*) array {
   
-  uint startPosition = offset + tagBytesCount + dataBytesCount;
+  uint startPosition = offset + tagBytesLenght + dataBytesLenght;
   
-  while (startPosition < offset + valueLenght) {
+  while (startPosition < offset + dataBytesLenght + valueLenght) {
     uint nextOffset = 0;
     Tlv* tlv = [self parseTlvData:data offset:startPosition  nextOffset:&nextOffset];
     [array addObject:tlv];

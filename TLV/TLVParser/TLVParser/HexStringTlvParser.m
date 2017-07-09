@@ -24,7 +24,7 @@
       return [tlvParsed printTlvStructureWithOffsetString:@""];
     }
   } @catch (NSException *exception) {
-    return exception.reason;
+    [NSException raise:@"Bad Parsing" format:@"%@",exception.reason];
   }
   
   return @"Wrong data";

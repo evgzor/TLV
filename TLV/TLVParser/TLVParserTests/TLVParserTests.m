@@ -10,6 +10,7 @@
 #import "NSData+HexString.h"
 #import "Tlv.h"
 #import "TlvDataParser.h"
+#import "HexStringTlvParser.h"
 
 @interface TLVParserTests : XCTestCase
 
@@ -48,8 +49,11 @@
                              invertedSet]]
                            componentsJoinedByString:@""];
   
+  NSString* outputString = [HexStringTlvParser parseTlvFromHexString:hexStr];
+  
   XCTAssertEqual(3, tlvParsed.array.count);
   XCTAssertEqual([formatedHex isEqualToString:serializedString], YES);
+  XCTAssertEqual(outputString.length, 151);
   
   
   // This is an example of a functional test case.
