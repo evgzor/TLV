@@ -60,7 +60,7 @@ static const uint undefinedLenghtValueIndicator = 0x80;
   uint lenght = bytes[offset];
   
   if (lenghtOfCodedLenth > 1) {
-    uint lengthBytesNumber = lenght - 1;
+    uint lengthBytesNumber = lenghtOfCodedLenth - 1;
     [[data subdataWithRange:NSMakeRange(offset + 1, lengthBytesNumber)] getBytes: &lenght length: sizeof(lengthBytesNumber)];
   }
   
